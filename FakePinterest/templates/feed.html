@@ -1,0 +1,19 @@
+{%extends "home.html"%}
+
+{%block titulo%}
+Feed Principal
+{%endblock%}
+
+{%block conteudo%}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/feed_style.css') }}">
+    {% include 'navbar.html' %}
+    <div class="container">
+        <div class="conteudo">
+            {% for foto in fotos %}
+                <a href="{{ url_for('perfil',id_usuario=foto.id_usuario)}}" class="bloco-imagem">
+                    <img src="{{ url_for('static', filename='fotos_posts/{}'.format(foto.imagem)) }}">
+                </a>
+            {% endfor %}
+        </div>
+    </div>
+{%endblock%}

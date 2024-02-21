@@ -1,0 +1,40 @@
+{%extends "home.html"%}
+
+{%block titulo%}
+Login
+{%endblock%}
+
+{%block conteudo%}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/login_style.css') }}">
+<h1>Login</h1>
+<div class="div_main">
+    <div class="caixa_login">
+        <form  action="{{ url_for('login') }}" method="post">
+            {{form.csrf_token}}
+
+            <div>
+                {{form.email.label()}}
+                {{form.email()}}
+            </div>
+
+            <div>
+                {{form.senha.label()}}
+                {{form.senha()}}
+            </div>
+
+            <div>
+                {{form.lembrar.label()}}
+                {{form.lembrar()}}
+            </div>
+            
+            <div class="botao_login">
+                {{form.submit()}}
+            </div>
+        </form>
+        <div class="botoes">
+            <a class="butao_page_login" href="{{ url_for('criar_conta') }}">Criar conta</a>
+            <a class="butao_page_login" href="{{ url_for('homepage') }}">Cancelar</a>
+        </div>
+    </div>
+</div>
+{%endblock%}

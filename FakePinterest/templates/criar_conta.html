@@ -1,0 +1,43 @@
+{%extends "home.html"%}
+{%block titulo%}
+Criar conta
+{%endblock%}
+{%block conteudo%}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/cadastro_style.css') }}">
+<h1>Criar conta</h1>
+<div class="div_main">
+    <div class="caixa_cadastro">
+        <form action="{{ url_for('criar_conta') }}" method="post">
+            {{form.csrf_token}}
+
+            <div>
+                {{form.nome.label()}} 
+                {{form.nome()}}
+            </div>
+
+            <div>
+                {{form.email.label()}} 
+                {{form.email()}}
+            </div>
+
+            <div>
+                {{form.senha.label()}} 
+                {{form.senha()}}
+            </div>
+
+            <div>
+                {{form.confirmar_senha.label()}} 
+                {{form.confirmar_senha()}}
+            </div>
+
+            <div class="botao_cadastrar">
+                {{form.submit()}}
+            </div>
+        </form>
+        <div class="botoes">
+            <a class="botao_page_cadastro" href="{{ url_for('login') }}">Login</a>
+            <a class="botao_page_cadastro" href="{{ url_for('homepage') }}">Cancelar</a>
+        </div>
+    </div>
+</div>
+{%endblock%}

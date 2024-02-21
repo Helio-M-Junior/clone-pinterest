@@ -1,0 +1,43 @@
+nav {
+    padding: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+  
+.logo-pinterest {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    column-gap: 4px;
+}
+  
+.link-nav {
+    color: white;
+    background-color: rgb(190, 45, 45);
+    text-decoration: none;
+    border: 2px solid rgb(190, 45, 45);
+    padding: 10px;
+    border-radius: 20px;
+    transition: all ease 0.2s;
+}
+  
+.link-nav:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(190, 45, 45);
+}
+
+.restante-nav {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    width: fit-content;
+}
+
+h1 { 
+    display: flex;
+    justify-content: center;
+    color: rgb(233, 11, 11);
+    font-size: 2.5em;
+    margin: 250;
+}

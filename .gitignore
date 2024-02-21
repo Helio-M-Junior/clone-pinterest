@@ -1,0 +1,6 @@
+FakePinterest/__pycache__/
+venv/
+instance/*.db
+
+
+

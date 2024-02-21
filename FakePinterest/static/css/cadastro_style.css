@@ -1,0 +1,77 @@
+body{
+    background-image: url('/static/background_site/background_cadastro.jpg');    
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    color: rgb(190, 45, 45);
+    margin-top: 7%;
+    font-size: 50px;
+    text-shadow: 2px 2px 2px black;
+    
+}
+
+.div_main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    box-sizing: border-box;
+}
+
+.caixa_cadastro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.300);
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 0px black;
+    margin-top: 7%;
+}
+
+form div {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+label {
+    margin-bottom: 5px;
+    margin-right: auto;
+}
+
+input {
+    margin-bottom: 10px;
+    margin-left: 75px;
+}
+
+.botao_cadastrar {
+    margin-left: 18%;
+}
+
+.botoes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;   
+}
+
+.botao_page_cadastro {
+    color: white;
+    background-color: rgb(190, 45, 45);
+    text-decoration: none;
+    border: 2px solid rgb(190, 45, 45);
+    padding: 10px;
+    border-radius: 20px;
+    transition: all ease 0.2s;
+}
+
+.botao_page_cadastro:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(190, 45, 45);
+}

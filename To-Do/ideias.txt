@@ -1,0 +1,8 @@
+<!-- <a href="{{ url_for('recuperar_senha') }}">Esqueci minha senha</a> --> implementar na tela de login
+vericar o lembrar de mim.
+
+verificar a questão do F5 após postar uma foto, pois ele fica reenviando o formulario
+adcionar a opção de remover foto
+verificar como usar o DB de forma online.
+implementar uma barra de busca de usuario
+
