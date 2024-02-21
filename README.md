@@ -4,6 +4,8 @@ Este projeto é uma aplicação web chamada FakePinterest, que permite aos usuá
 O projeto foi baseado no minicurso Criação de Sites em Python da Hashtag Treinamentos podendo ser encontrado no link abaixo.
 [Minicurso Criação de Sites em Python](https://blp.hashtagtreinamentos.com/python/minicurso/criacao-sites-python)
 
+A ideia inicial com o projeto era adquirir conhecimentos na criação de um website, para que no futuro seja criado um website como portfolio.
+
 # Configuração e Execução do Projeto
 
 1. Pré-requisitos:
