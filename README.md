@@ -53,6 +53,7 @@ O projeto utiliza um banco de dados SQLite, que deve ser criado rodando o arquiv
 
 Abra um terminal na pasta do projeto.
 Em seguida rode o arquivo "main.py"
+no app.run() o parametro "debug=True" está sendo usado para que as alterações sejam refletidas em tempo real (após salvar as mudanças e atualizar a pagina F5)
 No proprio terminal irá aparecer um link o qual irá redirecionar para o site que está rodando localmente.
 O servidor Flask será iniciado e estará disponível em http://localhost:5000 por padrão.
 
